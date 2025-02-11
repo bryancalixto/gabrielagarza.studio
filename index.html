@@ -19,19 +19,42 @@
         .container {
             display: flex;
             align-items: center;
-            width: 100%; /* Increase width for spacing */
+            width: 80%; /* Adjusted width for responsiveness */
+            max-width: 1000px;
+            flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+            justify-content: center;
         }
 
         .image {
-            width: 800px; /* Set fixed size */
+            width: 800px; /* Set fixed size for larger screens */
             height: auto;
-            margin-right: 10%; /* Pushes image left */
+            margin-right: 10%; /* Space between image and text */
         }
 
         .text {
             font-size: 2.5rem;
             font-weight: 500;
             color: #333;
+            text-align: center; /* Centers text for better mobile display */
+        }
+
+        /* Media Query for mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stacks content vertically on smaller screens */
+                justify-content: center;
+            }
+
+            .image {
+                width: 100%; /* Makes the image fill the width of the screen */
+                margin-right: 0; /* Removes extra space */
+                margin-bottom: 20px; /* Adds space between image and text */
+            }
+
+            .text {
+                font-size: 2rem; /* Smaller text for mobile */
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
