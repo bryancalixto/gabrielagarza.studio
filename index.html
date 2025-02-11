@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="icon" href="favicon.png" type="image/png"> <!-- PNG Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -19,48 +19,52 @@
         .container {
             display: flex;
             align-items: center;
-            width: 80%; /* Adjusted width for responsiveness */
-            max-width: 1000px;
-            flex-wrap: wrap; /* Allows content to wrap on smaller screens */
-            justify-content: center;
+            width: 90%;
+            max-width: 1200px;
+            gap: 40px;
         }
 
         .image {
-            width: 800px; /* Set fixed size for larger screens */
-            height: auto;
-            margin-right: 10%; /* Space between image and text */
+            width: auto;
+            max-width: 800px;
+            flex: 1;
         }
 
         .text {
             font-size: 2.5rem;
             font-weight: 500;
             color: #333;
-            text-align: center; /* Centers text for better mobile display */
+            flex: 1;
         }
 
-        /* Media Query for mobile */
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             .container {
-                flex-direction: column; /* Stacks content vertically on smaller screens */
-                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
             }
 
             .image {
-                width: 100%; /* Makes the image fill the width of the screen */
-                margin-right: 0; /* Removes extra space */
-                margin-bottom: 20px; /* Adds space between image and text */
+                width: 100%;
+                max-width: 600px;
             }
 
             .text {
-                font-size: 2rem; /* Smaller text for mobile */
-                margin-top: 10px;
+                font-size: 2rem;
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 1.75rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="image.png" alt="Coming Soon Image" class="image">
+        <img src="image.png" alt="Coming Soon" class="image">
         <h1 class="text">Coming soon</h1>
     </div>
 </body>
