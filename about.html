@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; /* Ensure the body is the positioning context */
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .home-link {
+      position: absolute;
+      top: 5%;  /* Adjust for vertical position */
+      left: 4%;  /* Adjust for horizontal position */
+      transform: translate(-50%, -50%); /* Center the link box */
+      width: 5%;  /* Adjust for size */
+      height: 4%;  /* Adjust for size */
+      display: block;
+      background-color: rgba(0, 0, 0, 0.5); /* Black background */
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    aria-label ensures accessibility for screen readers.
+    The anchor contains no visible text so it appears as a blank box.
+  -->
+  <img src="Home/about.jpg" alt="About">
+  <a href="index.html" class="home-link" aria-label="Go Home"></a>
+</body>
+</html>

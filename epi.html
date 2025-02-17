@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPI</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; /* Ensure the body is the positioning context */
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    .works-link {
+      position: absolute;
+      top: 0.8%;  /* Adjust for vertical position */
+      left: 5.5%;  /* Adjust for horizontal position */
+      transform: translate(-50%, -50%); /* Center the link box */
+      width: 8%;  /* Adjust for size */
+      height: 0.6%;  /* Adjust for size */
+      display: block;
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    aria-label ensures accessibility for screen readers.
+    The anchor contains no visible text so it appears as a blank box.
+  -->
+  <a href="works.html" class="works-link" aria-label="Go to Works"></a>
+  <img src="Works/EPI/epi1.jpg" alt="EPI 1">
+  <img src="Works/EPI/epi2.jpg" alt="EPI 2">
+  <img src="Works/EPI/epi3.jpg" alt="EPI 3">
+  <img src="Works/EPI/epi4.jpg" alt="EPI 4">
+  <img src="Works/EPI/epi5.jpg" alt="EPI 5">
+  <img src="Works/EPI/epi6.jpg" alt="EPI 6">
+</body>
+</html>

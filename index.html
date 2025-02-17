@@ -2,26 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velo</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: url('Home.jpg') no-repeat center center;
-      background-size: cover;
-      height: 100vh;
-      position: relative;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; /* Ensure the body is the positioning context */
     }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .about-link {
+      position: absolute;
+      top: 46%;  /* Adjust for vertical position */
+      left: 14.5%;  /* Adjust for horizontal position */
+      transform: translate(-50%, -50%); /* Center the link box */
+      width: 8%;  /* Adjust for size */
+      height: 5%;  /* Adjust for size */
+      display: block;
+      background-color: rgba(0, 0, 0, 0.5); /* Black background */
+    }
+
     .works-link {
       position: absolute;
-      top: 285px;  /* Adjust for vertical position */
-      left: 185px;  /* Adjust for horizontal position */
-      width: 60px;  /* Adjust for size */
-      height: 30px;  /* Adjust for size */
+      top: 54%;  /* Adjust for vertical position */
+      left: 14.5%;  /* Adjust for horizontal position */
+      transform: translate(-50%, -50%); /* Center the link box */
+      width: 8%;  /* Adjust for size */
+      height: 5%;  /* Adjust for size */
       display: block;
-      background-color: transparent; /* Transparent background */
-      /* Optional: If you want to hide any text, remove it entirely or 
-         visually hide it by using text-indent or a similar technique. */
+      background-color: rgba(0, 0, 0, 0.5); /* Black background */
     }
   </style>
 </head>
@@ -30,6 +47,8 @@
     aria-label ensures accessibility for screen readers.
     The anchor contains no visible text so it appears as a blank box.
   -->
-  <a href="Works/works.html" class="works-link" aria-label="Go to Works"></a>
+  <img src="Home/home.jpg" alt="Home">
+  <a href="about.html" class="about-link" aria-label="Go to About"></a>
+  <a href="works.html" class="works-link" aria-label="Go to Works"></a>
 </body>
 </html>
