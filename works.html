@@ -9,65 +9,69 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('Works/works.jpg') no-repeat center center fixed;
-      background-size: contain; /* Ensures the image covers the entire viewport */
-      height: 100vh;
-      position: relative;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; /* Ensure the body is the positioning context */
     }
-
+    img {
+      max-width: 100%;
+      display: block;
+    }
     .home-link {
       position: absolute;
       top: 5%;  /* Adjust for vertical position */
-      left: 11.15%;  /* Adjust for horizontal position */
+      left: 4%;  /* Adjust for horizontal position */
       transform: translate(-50%, -50%); /* Center the link box */
       width: 6%;  /* Adjust for size */
       height: 5%;  /* Adjust for size */
       display: block;
-      background-color: transparent; /* Black background with 50% transparency */
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
     }
 
     .velo-link {
       position: absolute;
       top: 50%;  /* Adjust for vertical position */
-      left: 23.25%;  /* Adjust for horizontal position */
+      left: 18%;  /* Adjust for horizontal position */
       transform: translate(-50%, -50%); /* Center the link box */
       width: 15%;  /* Adjust for size */
       height: 57%;  /* Adjust for size */
       display: block;
-      background-color: transparent; /* Black background with 50% transparency */
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
     }
 
     .east6th-link {
       position: absolute;
       top: 50%;  /* Adjust for vertical position */
-      left: 41%;  /* Adjust for horizontal position */
+      left: 39.25%;  /* Adjust for horizontal position */
       transform: translate(-50%, -50%); /* Center the link box */
       width: 15%;  /* Adjust for size */
       height: 57%;  /* Adjust for size */
       display: block;
-      background-color: transparent; /* Black background with 50% transparency */
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
     }
 
     .epi-link {
       position: absolute;
       top: 50%;  /* Adjust for vertical position */
-      left: 59%;  /* Adjust for horizontal position */
+      left: 60.25%;  /* Adjust for horizontal position */
       transform: translate(-50%, -50%); /* Center the link box */
       width: 15%;  /* Adjust for size */
       height: 57%;  /* Adjust for size */
       display: block;
-      background-color: transparent; /* Black background with 50% transparency */
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
     }
 
     .extra-link {
       position: absolute;
       top: 50%;  /* Adjust for vertical position */
-      left: 77.5%;  /* Adjust for horizontal position */
+      left: 81.5%;  /* Adjust for horizontal position */
       transform: translate(-50%, -50%); /* Center the link box */
       width: 15%;  /* Adjust for size */
       height: 57%;  /* Adjust for size */
       display: block;
-      background-color: transparent; /* Black background with 50% transparency */
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
     }
   </style>
 </head>
@@ -81,5 +85,6 @@
   <a href="east6th.html" class="east6th-link" aria-label="Go East6th"></a>
   <a href="epi.html" class="epi-link" aria-label="Go EPI"></a>
   <a href="extra.html" class="extra-link" aria-label="Go Extra"></a>
+  <img src="Works/works.jpg" alt="EXTRA 1">
 </body>
 </html>
