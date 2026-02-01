@@ -150,18 +150,6 @@ blockquote {
 }
 
 .home-title {
-  margin-bottom: var(--spacing-sm);
-}
-
-.home-quote {
-  font-size: 0.9rem;
-  color: var(--color-gray);
-  margin-bottom: var(--spacing-xs);
-}
-
-.home-quote-author {
-  font-size: 0.8rem;
-  color: var(--color-gray);
   margin-bottom: var(--spacing-lg);
 }
 
@@ -203,6 +191,17 @@ blockquote {
 .works-page {
   min-height: 100vh;
   padding: var(--spacing-md);
+}
+
+.works-header {
+  text-align: center;
+  padding: var(--spacing-md) 0;
+}
+
+.works-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: italic;
 }
 
 .projects-grid {
@@ -286,6 +285,78 @@ blockquote {
 }
 
 /* --------------------------------------------------------------------------
+   Misc Page
+   -------------------------------------------------------------------------- */
+.misc-page {
+  min-height: 100vh;
+  padding: var(--spacing-md);
+}
+
+.misc-header {
+  text-align: center;
+  padding: var(--spacing-md) 0;
+}
+
+.misc-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: italic;
+}
+
+.misc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 800px;
+  margin: var(--spacing-lg) auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* --------------------------------------------------------------------------
+   Project Description & Meta
+   -------------------------------------------------------------------------- */
+.project-description {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-lg);
+  padding: 0 var(--spacing-md);
+  text-align: center;
+}
+
+.project-description p {
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.project-professor,
+.project-collaborator {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  margin-top: var(--spacing-xs);
+}
+
+/* --------------------------------------------------------------------------
+   Photography Sections
+   -------------------------------------------------------------------------- */
+.photo-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.photo-section-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: var(--spacing-xs);
+}
+
+.photo-section-location {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+/* --------------------------------------------------------------------------
    About Page
    -------------------------------------------------------------------------- */
 .about-page {
@@ -327,8 +398,18 @@ blockquote {
   margin-top: var(--spacing-lg);
 }
 
-.about-email a {
+.about-email a,
+.about-contact a,
+.about-linkedin a {
   font-weight: 500;
+}
+
+.about-contact {
+  margin-top: var(--spacing-lg);
+}
+
+.about-linkedin {
+  margin-top: var(--spacing-xs);
 }
 
 .about-thanks {
@@ -384,6 +465,11 @@ blockquote {
   
   .project-card-image {
     aspect-ratio: 4 / 5;
+  }
+  
+  .misc-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
   }
 }
 

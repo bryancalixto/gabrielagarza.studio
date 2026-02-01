@@ -1,0 +1,31 @@
+1 Home
+2 Projects
+3-10 hosaki
+11-19 lumen wells
+20-25 velo
+26-31 e.p.i
+32 misc.
+33-35 photography
+36-39 extra works
+40 acknowledgments
+41 about me
+
+gabrielagarza.studio/
+├── index.html          # Home page. Links to works, misc, and about
+├── about.html          # About page. Links to home (back)
+├── works.html          # Projects grid. Links to home (back), hosaki, lumen wells, velo, and epi.
+├── projects/
+│   ├── hosaki.html       # Individual project pages
+│   ├── lumen-wells.html
+│   ├── epi.html
+│   └── 
+├── misc/
+│   ├── extra-works.html
+│   └── photography.html
+├── css/
+│   └── style.css       # Single shared stylesheet
+├── images/             # Renamed from Works/ for clarity
+│   ├── home/
+│   ├── projects/
+│   └── favicons/
+└── fonts/              # If using custom fonts (optional)
