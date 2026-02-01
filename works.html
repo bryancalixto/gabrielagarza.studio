@@ -3,88 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="Favicons/home.png" type="image/x-icon">
-  <title>Works</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative; /* Ensure the body is the positioning context */
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-    .home-link {
-      position: absolute;
-      top: 5%;  /* Adjust for vertical position */
-      left: 4%;  /* Adjust for horizontal position */
-      transform: translate(-50%, -50%); /* Center the link box */
-      width: 6%;  /* Adjust for size */
-      height: 5%;  /* Adjust for size */
-      display: block;
-      background-color: transparent; /* Black background with 50% transparency */
-    }
-
-    .velo-link {
-      position: absolute;
-      top: 50%;  /* Adjust for vertical position */
-      left: 18%;  /* Adjust for horizontal position */
-      transform: translate(-50%, -50%); /* Center the link box */
-      width: 15%;  /* Adjust for size */
-      height: 57%;  /* Adjust for size */
-      display: block;
-      background-color: transparent; /* Black background with 50% transparency */
-    }
-
-    .east6th-link {
-      position: absolute;
-      top: 50%;  /* Adjust for vertical position */
-      left: 39.25%;  /* Adjust for horizontal position */
-      transform: translate(-50%, -50%); /* Center the link box */
-      width: 15%;  /* Adjust for size */
-      height: 57%;  /* Adjust for size */
-      display: block;
-      background-color: transparent; /* Black background with 50% transparency */
-    }
-
-    .epi-link {
-      position: absolute;
-      top: 50%;  /* Adjust for vertical position */
-      left: 60.25%;  /* Adjust for horizontal position */
-      transform: translate(-50%, -50%); /* Center the link box */
-      width: 15%;  /* Adjust for size */
-      height: 57%;  /* Adjust for size */
-      display: block;
-      background-color: transparent; /* Black background with 50% transparency */
-    }
-
-    .extra-link {
-      position: absolute;
-      top: 50%;  /* Adjust for vertical position */
-      left: 81.5%;  /* Adjust for horizontal position */
-      transform: translate(-50%, -50%); /* Center the link box */
-      width: 15%;  /* Adjust for size */
-      height: 57%;  /* Adjust for size */
-      display: block;
-      background-color: transparent; /* Black background with 50% transparency */
-    }
-  </style>
+  <meta name="description" content="Works - Gabriela Garza Architecture Portfolio">
+  <link rel="icon" href="Favicons/works.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Works - Gabriela Garza</title>
 </head>
 <body>
-  <!-- 
-    aria-label ensures accessibility for screen readers.
-    The anchor contains no visible text so it appears as a blank box.
-  -->
-  <a href="index.html" class="home-link" aria-label="Go Home"></a>
-  <a href="velo.html" class="velo-link" aria-label="Go Velo"></a>
-  <a href="east6th.html" class="east6th-link" aria-label="Go East6th"></a>
-  <a href="epi.html" class="epi-link" aria-label="Go EPI"></a>
-  <a href="extra.html" class="extra-link" aria-label="Go Extra"></a>
-  <img src="Works/works.jpg" alt="EXTRA 1">
+  <div class="works-page">
+    <nav class="site-nav">
+      <a href="index.html" class="nav-home">Home</a>
+    </nav>
+    
+    <main class="projects-grid">
+      <article class="project-card">
+        <a href="projects/velo.html">
+          <img src="Works/VELO/velo1.jpg" alt="Velo project thumbnail" class="project-card-image" loading="lazy">
+          <h2 class="project-card-title">Velo</h2>
+          <p class="project-card-date">Fall 2024</p>
+        </a>
+      </article>
+      
+      <article class="project-card">
+        <a href="projects/east-sixth.html">
+          <img src="Works/EAST6th/east1.jpg" alt="East Sixth project thumbnail" class="project-card-image" loading="lazy">
+          <h2 class="project-card-title">East Sixth</h2>
+          <p class="project-card-date">Spring 2024</p>
+        </a>
+      </article>
+      
+      <article class="project-card">
+        <a href="projects/epi.html">
+          <img src="Works/EPI/epi1.jpg" alt="E.P.I project thumbnail" class="project-card-image" loading="lazy">
+          <h2 class="project-card-title">E. P. I</h2>
+          <p class="project-card-date">Fall 2023</p>
+        </a>
+      </article>
+      
+      <article class="project-card">
+        <a href="projects/extra.html">
+          <img src="Works/EXTRA/extra1.jpg" alt="Extra Works thumbnail" class="project-card-image" loading="lazy">
+          <h2 class="project-card-title">Extra Works</h2>
+          <p class="project-card-date">2022–2025</p>
+        </a>
+      </article>
+    </main>
+  </div>
 </body>
 </html>

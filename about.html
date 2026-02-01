@@ -3,41 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="Favicons/home.png" type="image/x-icon">
-  <title>About</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative; /* Ensure the body is the positioning context */
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .home-link {
-      position: absolute;
-      top: 5%;  /* Adjust for vertical position */
-      left: 4%;  /* Adjust for horizontal position */
-      transform: translate(-50%, -50%); /* Center the link box */
-      width: 5%;  /* Adjust for size */
-      height: 4%;  /* Adjust for size */
-      display: block;
-      background-color: transparent; /* Black background */
-    }
-  </style>
+  <meta name="description" content="About Gabriela Garza - Architecture Student at UT Austin">
+  <link rel="icon" href="Favicons/home.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>About - Gabriela Garza</title>
 </head>
 <body>
-  <!-- 
-    aria-label ensures accessibility for screen readers.
-    The anchor contains no visible text so it appears as a blank box.
-  -->
-  <img src="Home/about.jpg" alt="About">
-  <a href="index.html" class="home-link" aria-label="Go Home"></a>
+  <div class="about-page">
+    <nav class="site-nav">
+      <a href="index.html" class="nav-home">Home</a>
+    </nav>
+    
+    <main class="about-content">
+      <div class="about-image-container">
+        <img src="Home/about.jpg" alt="Gabriela Garza" class="about-image">
+      </div>
+      
+      <div class="about-text">
+        <h1 class="about-title">About Me</h1>
+        
+        <p>I am a third-year Bachelor of Architecture (BArch) student at the University of Texas at Austin, originally from a small border town in the Rio Grande Valley. My passion for art, woodworking, and community building fuels my approach to design, where I seek to create meaningful spaces that foster connection and engagement.</p>
+        
+        <p>I pride myself on my curiosity as it inspires me and makes me eager to learn. I am always exploring new opportunities to expand my skills and understanding of the built environment.</p>
+        
+        <p>Feel free to reach out—I'm always open to collaboration and conversation!</p>
+        
+        <p class="about-email">
+          <a href="mailto:gabrielagarza.y@utexas.edu">gabrielagarza.y@utexas.edu</a>
+        </p>
+        
+        <p class="about-thanks text-small">A heartfelt thank you to all the professors who have guided me through different approaches, each contributing to my growth and understanding of architecture.</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

@@ -3,53 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="Favicons/home.png" type="image/x-icon">
-  <title>Home</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative; /* Ensure the body is the positioning context */
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .about-link {
-      position: absolute;
-      top: 46%;  /* Adjust for vertical position */
-      left: 14.5%;  /* Adjust for horizontal position */
-      transform: translate(-50%, -50%); /* Center the link box */
-      width: 8%;  /* Adjust for size */
-      height: 5%;  /* Adjust for size */
-      display: block;
-      background-color: transparent; /* Black background */
-    }
-
-    .works-link {
-      position: absolute;
-      top: 54%;  /* Adjust for vertical position */
-      left: 14.5%;  /* Adjust for horizontal position */
-      transform: translate(-50%, -50%); /* Center the link box */
-      width: 8%;  /* Adjust for size */
-      height: 5%;  /* Adjust for size */
-      display: block;
-      background-color: transparent; /* Black background */
-    }
-  </style>
+  <meta name="description" content="Gabriela Garza - Architecture and Design Portfolio">
+  <link rel="icon" href="Favicons/home.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Gabriela Garza</title>
 </head>
 <body>
-  <!-- 
-    aria-label ensures accessibility for screen readers.
-    The anchor contains no visible text so it appears as a blank box.
-  -->
-  <img src="Home/home.jpg" alt="Home">
-  <a href="about.html" class="about-link" aria-label="Go to About"></a>
-  <a href="works.html" class="works-link" aria-label="Go to Works"></a>
+  <main class="home">
+    <div class="home-content">
+      <h1 class="home-title title-large">GABRIELA GARZA</h1>
+      <p class="home-quote">"The sun never knew how great it was until it hit the side of a building."</p>
+      <p class="home-quote-author">— Louis I. Kahn</p>
+      <nav class="home-nav">
+        <a href="about.html">ABOUT ME</a>
+        <a href="works.html">WORKS</a>
+      </nav>
+    </div>
+    <aside class="home-graphic">
+      <img src="Home/home.jpg" alt="Abstract geometric composition" class="home-hero-image">
+    </aside>
+  </main>
 </body>
 </html>

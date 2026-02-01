@@ -1,0 +1,403 @@
+/* ==========================================================================
+   Gabriela Garza Portfolio - Shared Styles
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Variables
+   -------------------------------------------------------------------------- */
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #666;
+  --color-light-gray: #f5f5f5;
+  
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  
+  --max-width: 1400px;
+  --transition: 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Reset & Base Styles
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+p {
+  margin: 0 0 var(--spacing-sm);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+.title-large {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.title-medium {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.text-small {
+  font-size: 0.875rem;
+  color: var(--color-gray);
+}
+
+/* --------------------------------------------------------------------------
+   Layout
+   -------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* --------------------------------------------------------------------------
+   Navigation
+   -------------------------------------------------------------------------- */
+.site-nav {
+  padding: var(--spacing-md);
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.site-nav a::before {
+  content: '←';
+  font-size: 1rem;
+}
+
+.nav-home::before {
+  content: '⌂';
+}
+
+/* --------------------------------------------------------------------------
+   Home Page
+   -------------------------------------------------------------------------- */
+.home {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.home-content {
+  padding: var(--spacing-lg);
+}
+
+.home-title {
+  margin-bottom: var(--spacing-sm);
+}
+
+.home-quote {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  margin-bottom: var(--spacing-xs);
+}
+
+.home-quote-author {
+  font-size: 0.8rem;
+  color: var(--color-gray);
+  margin-bottom: var(--spacing-lg);
+}
+
+.home-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.home-nav a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.home-graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-md);
+}
+
+.home-graphic img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.home-hero-image {
+  object-fit: cover;
+  object-position: right center;
+  width: 100%;
+  height: 80vh;
+}
+
+/* --------------------------------------------------------------------------
+   Works Page - Project Grid
+   -------------------------------------------------------------------------- */
+.works-page {
+  min-height: 100vh;
+  padding: var(--spacing-md);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+  max-width: var(--max-width);
+  margin: var(--spacing-lg) auto;
+  padding: 0 var(--spacing-md);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card a {
+  display: block;
+}
+
+.project-card-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  margin-bottom: var(--spacing-sm);
+  background-color: var(--color-light-gray);
+}
+
+.project-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: var(--spacing-xs);
+}
+
+.project-card-date {
+  font-size: 0.8rem;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------------------------------
+   Project Detail Page
+   -------------------------------------------------------------------------- */
+.project-page {
+  min-height: 100vh;
+}
+
+.project-header {
+  text-align: center;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.project-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-style: italic;
+  margin-bottom: var(--spacing-xs);
+}
+
+.project-date {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md) var(--spacing-xl);
+}
+
+.project-images img {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   About Page
+   -------------------------------------------------------------------------- */
+.about-page {
+  min-height: 100vh;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
+  align-items: start;
+}
+
+.about-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.about-text {
+  padding: var(--spacing-md) 0;
+}
+
+.about-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--spacing-md);
+}
+
+.about-text p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
+.about-email {
+  margin-top: var(--spacing-lg);
+}
+
+.about-email a {
+  font-weight: 500;
+}
+
+.about-thanks {
+  margin-top: var(--spacing-lg);
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Design
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  
+  .home-content {
+    padding: var(--spacing-lg) var(--spacing-md);
+    order: 1;
+  }
+  
+  .home-graphic {
+    order: 2;
+    padding: var(--spacing-md);
+  }
+  
+  .home-graphic img {
+    max-height: 50vh;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    max-height: 60vh;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .project-card-image {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Utilities
+   -------------------------------------------------------------------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
