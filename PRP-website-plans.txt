@@ -40,3 +40,43 @@ I'm building a portfolio website using PNG images as page designs with invisible
   Reference @PRP-website-plans.txt for sitemap. Completed pages: index.html, architectural-works.html, photography-extras.html, about-me.html.                                                
                                                                                                                                                                                               
   Use the same HTML/CSS style as @index.html for consistency.
+
+
+
+
+
+
+❯ What is the difference between index.html and (i.e.) hosaki? Why does it align differently?                                                                                                 
+                                                                                                                                                                                              
+● Here are the key CSS differences:                                                                                                                                                           
+  ┌─────────────────────────────────┬────────────────────────────────────┬─────────────────────────────────────────┐                                                                          
+  │            Property             │     index.html (single-screen)     │        hosaki.html (scrollable)         │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ html, body height               │ height: 100%;                      │ not set                                 │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ html, body overflow             │ overflow: hidden;                  │ overflow-x: hidden;                     │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ .page-container height          │ height: 100%;                      │ not set                                 │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ .page-container flex-direction  │ not set (default: row)             │ flex-direction: column;                 │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ .page-container justify-content │ justify-content: center;           │ not set                                 │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ .image-wrapper width            │ not set                            │ width: 100%;                            │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ .image-wrapper max-width/height │ max-width: 100%; max-height: 100%; │ not set                                 │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ .image-wrapper display          │ not set                            │ display: flex; justify-content: center; │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ .page-image max-width           │ max-width: 100vw;                  │ max-width: 100%;                        │                                                                          
+  ├─────────────────────────────────┼────────────────────────────────────┼─────────────────────────────────────────┤                                                                          
+  │ .page-image max-height          │ max-height: 100vh;                 │ not set                                 │                                                                          
+  └─────────────────────────────────┴────────────────────────────────────┴─────────────────────────────────────────┘                                                                          
+  Why they align differently:                                                                                                                                                                 
+                                                                                                                                                                                              
+  - index.html: The height: 100% chain (html → body → .page-container) plus overflow: hidden locks everything to the viewport. The image is constrained to 100vh height, so it centers both   
+  horizontally and vertically within the fixed viewport.                                                                                                                                      
+  - hosaki.html: No height constraints, so the page grows with content. flex-direction: column stacks images vertically. Images expand to full width (max-width: 100%) with no height limit,  
+  so they display at natural proportions and scroll vertically.                                                                                                                               
+                                                                                                                                                                                              
+  The alignment difference comes from index.html having a fixed viewport container that centers content, while hosaki.html is a flowing document that grows downward.    
