@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Works - Gabriela Garza</title>
+    <meta name="description" content="Gabriela Garza - Architectural Works">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            background: white;
+            overflow: hidden;
+        }
+
+        .page-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-wrapper {
+            position: relative;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .page-image {
+            display: block;
+            max-width: 100vw;
+            max-height: 100vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .link-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .nav-link {
+            position: absolute;
+            pointer-events: auto;
+            text-decoration: none;
+            color: transparent;
+            display: block;
+            /* Uncomment to debug link positions */
+            background: rgba(255, 0, 0, 0.2);
+        }
+
+        /* Link positions as percentages of the image */
+        .link-back {
+            left: 1%;
+            top: 2.5%;
+            width: 5%;
+            height: 5%;
+        }
+
+        .link-hosaki {
+            left: 18.5%;
+            top: 20.5%;
+            width: 30%;
+            height: 17.5%;
+        }
+
+        .link-lumen {
+            left: 18.5%;
+            top: 39%;
+            width: 30%;
+            height: 17.5%;
+        }
+
+        .link-velo {
+            left: 18.5%;
+            top: 57.5%;
+            width: 30%;
+            height: 17.5%;
+        }
+
+        .link-epi {
+            left: 18.5%;
+            top: 76%;
+            width: 30%;
+            height: 17.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="image-wrapper">
+            <img src="architectural-works/architectural-works.png" alt="Architectural Works" class="page-image">
+            <div class="link-overlay">
+                <a href="index.html" class="nav-link link-back" aria-label="Back to Home"></a>
+                <a href="architectural-works/hosaki.html" class="nav-link link-hosaki" aria-label="Hosaki"></a>
+                <a href="architectural-works/lumen-wells.html" class="nav-link link-lumen" aria-label="Lumen Wells"></a>
+                <a href="architectural-works/velo.html" class="nav-link link-velo" aria-label="Velo"></a>
+                <a href="architectural-works/epi.html" class="nav-link link-epi" aria-label="E.P.I"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

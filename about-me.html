@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Gabriela Garza</title>
+    <meta name="description" content="Gabriela Garza - About Me">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            background: white;
+            overflow-x: hidden;
+        }
+
+        .page-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-image {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .link-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .nav-link {
+            position: absolute;
+            pointer-events: auto;
+            text-decoration: none;
+            color: transparent;
+            display: block;
+            /* Uncomment to debug link positions */
+            background: rgba(255, 0, 0, 0.2);
+        }
+
+        /* First image - back link top left */
+        .link-back-top {
+            left: 1%;
+            top: 2.5%;
+            width: 5%;
+            height: 5%;
+        }
+
+        /* Second image - back link bottom left */
+        .link-back-bottom {
+            left: 1%;
+            top: 92.5%;
+            width: 5%;
+            height: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="image-wrapper">
+            <img src="home/about-me.png" alt="About Me" class="page-image">
+            <div class="link-overlay">
+                <a href="index.html" class="nav-link link-back-top" aria-label="Back to Home"></a>
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <img src="home/about-me2.png" alt="Acknowledgments" class="page-image">
+            <div class="link-overlay">
+                <a href="index.html" class="nav-link link-back-bottom" aria-label="Back to Home"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
