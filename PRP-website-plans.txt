@@ -29,3 +29,14 @@ gabrielagarza.studio/
 │   ├── projects/
 │   └── favicons/
 └── fonts/              # If using custom fonts (optional)
+
+I'm building a portfolio website using PNG images as page designs with invisible link overlays. My workflow:                                                                                
+                                                                                                                                                                                              
+  1. Each page uses a PNG image as the full visual design                                                                                                                                     
+  2. Links are transparent, absolutely positioned over the text in the image using percentage-based coordinates (so they scale with the image)                                                
+  3. Pages must: fit to screen (centered, responsive), have white infill, no horizontal scrolling                                                                                             
+  4. Debug link positions by uncommenting background: rgba(255, 0, 0, 0.2);                                                                                                                   
+                                                                                                                                                                                              
+  Reference @PRP-website-plans.txt for sitemap. Completed pages: index.html, architectural-works.html, photography-extras.html, about-me.html.                                                
+                                                                                                                                                                                              
+  Use the same HTML/CSS style as @index.html for consistency.
